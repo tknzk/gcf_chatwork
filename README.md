@@ -18,12 +18,11 @@ Cloud Functions http trigger chatwork integration
 # deploy
 
 ```
-gcloud alpha functions deploy FUNCTION_NAME --stage-bucket GS_BUCKET --trigger-http
+gcloud alpha functions deploy sendChatwork --stage-bucket GS_BUCKET --trigger-http
 ```
 
 # License
-MIT
-
+[The MIT License](./LICENSE).
 
 # Author
 
