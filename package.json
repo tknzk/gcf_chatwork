@@ -1,0 +1,16 @@
+{
+  "name": "gcf_chatwork",
+  "version": "1.0.0",
+  "description": "http trigger cloud functions chatwork integration. ",
+  "main": "index.js",
+  "dependencies": {
+    "config": "^1.24.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tknzk",
+  "license": "MIT"
+}
