@@ -7,11 +7,10 @@
 
 var request = require('request');
 var config = require('config');
-var chatworkConfigRoomId = config.Chatwork.room_id
-var chatworkConfigApiToken = config.Chatwork.api_token
+var chatworkConfigRoomId = config.Chatwork.room_id;
+var chatworkConfigApiToken = config.Chatwork.api_token;
 
-hexports.sendChatwork = function sendChatwork (req, res) {
-
+exports.sendChatwork = function sendChatwork (req, res) {
   var options = {
     url: 'https://api.chatwork.com/v1/rooms/' + chatworkConfigRoomId + '/messages',
     method: 'POST',
@@ -22,12 +21,13 @@ hexports.sendChatwork = function sendChatwork (req, res) {
     form: { body : `${req.body.text}` }
   };
   // request Chatwork API
-  request(options, recallback);
+  request(options, callback);
 
-  function recallback(error, response, body) {
+  function callback(error, response, body) {
     if (error == true) {
       console.log(body);
     }
   }
 
+  res.send('ok');
 };
