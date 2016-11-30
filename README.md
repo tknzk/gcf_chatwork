@@ -3,6 +3,8 @@ Cloud Functions http trigger chatwork integration
 
 # config
 
+- config/production.json
+
 ```config/production.json
 {
   "Chatwork": {
