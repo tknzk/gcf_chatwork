@@ -18,7 +18,7 @@ exports.sendChatwork = function sendChatwork (req, res) {
       'Content-Type':'application/x-www-form-urlencoded',
       'X-ChatWorkToken': chatworkConfigApiToken,
     },
-    form: { body : `${req.body.text}` }
+    form: { body : `from_slack [${req.body.user_name}]: ${req.body.text}` }
   };
   // request Chatwork API
   request(options, callback);
